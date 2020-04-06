@@ -1,0 +1,24 @@
+@media only screen and (max-width: 500px) {
+    .reg-btn {
+        font-size: 10pt;
+    }
+    .reg {
+        padding: 20px 10px;
+    }
+    .reg h1 {
+        font-size: 20pt;
+    }
+}
+
+.reg h1 {
+    font-size: 26pt;
+    margin-bottom: 20px;
+}
+
+.reg label {
+    font-size: 12pt;
+}
+
+.reg {
+    padding: 20px 40px;
+}

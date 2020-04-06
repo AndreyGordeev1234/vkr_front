@@ -1,0 +1,166 @@
+body {
+    background-color: #9CC5A1;
+}
+
+.nav-home {
+    font-size: 20pt;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+    background-color: white;
+    height: 80px;
+}
+
+.nav-home .navbar-brand {
+    font-size: 40pt;
+}
+
+.nav-home .nav-logo {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 1%;
+}
+
+.index-text {
+    text-align: center;
+    color: white;
+    margin-top: 20%;
+}
+
+.container .home{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.container .home p {
+    font-size: 20pt;
+}
+
+.container .home h1 {
+    font-size: 40pt;
+}
+
+/* waves */
+@keyframes move_wave {
+    0% {
+        transform: translateX(0) translateZ(0) scaleY(1)
+    }
+    50% {
+        transform: translateX(-25%) translateZ(0) scaleY(0.55)
+    }
+    100% {
+        transform: translateX(-50%) translateZ(0) scaleY(1)
+    }
+}
+.waveWrapper {
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    z-index: -1;
+}
+.waveWrapperInner {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+    bottom: -1px;
+    background-color: #9CC5A1;
+}
+.bgTop {
+    z-index: 15;
+    opacity: 0.5;
+}
+.bgMiddle {
+    z-index: 10;
+    opacity: 0.75;
+}
+.bgBottom {
+    z-index: 5;
+}
+.wave {
+    position: absolute;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background-repeat: repeat no-repeat;
+    background-position: 0 bottom;
+    transform-origin: center bottom;
+}
+.waveTop {
+    background-size: 50% 100px;
+}
+.waveAnimation .waveTop {
+    animation: move_wave 15s linear infinite;
+}
+.waveMiddle {
+    background-size: 50% 120px;
+}
+.waveAnimation .waveMiddle {
+    animation: move_wave 20s linear infinite;
+}
+.waveBottom {
+    background-size: 50% 100px;
+}
+.waveAnimation .waveBottom {
+    animation: move_wave 25s linear infinite;
+}
+
+/* link */
+a:hover{
+    color:black;
+}
+a.after:after{
+  content: "";
+  transition:0.5s all ease;
+  -webkit-backface-visibility:hidden;
+          backface-visibility:hidden;
+  position:absolute;
+}
+a.after:after{
+  bottom:-4px;
+}
+a.after:after{
+  height: 4px;
+  width:0;
+  background:black;
+}
+a.link:after{
+  left:50%;
+  -webkit-transform:translateX(-50%);
+          transform:translateX(-50%);
+}
+a.after:hover:after{
+  width:100%;
+}
+
+a.active {
+    color: black;
+    border-bottom: 4px solid black;
+}
+
+@media only screen and (max-width: 400px) {
+    .index-text h1 {
+        font-size: 20pt;
+    }
+    .index-text p {
+        font-size: 10pt;
+    }
+    .index-text {
+        margin-top: 50%;
+    }
+    .waveWrapper {
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 720px) {
+    .nav-home {
+        background-color: #9CC5A1;
+        box-shadow: 0 0 0;
+    }
+}

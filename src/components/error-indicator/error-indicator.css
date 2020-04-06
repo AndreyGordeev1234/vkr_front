@@ -1,0 +1,4 @@
+body > #root > .error-indicator {
+    height: 100vh;
+    margin: 0;
+}

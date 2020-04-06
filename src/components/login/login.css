@@ -1,0 +1,178 @@
+body {
+    background-color: #9CC5A1;
+}
+
+.login-form {
+    background-color: white;
+    padding: 20px 40px 40px 40px;
+    margin-top: 2%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 20px 20px 20px 20px;
+}
+
+.login-title {
+    text-align: center;
+    font-size: 28pt;
+    margin-bottom: 20px;
+}
+
+.logo-text, .reg-text {
+    color: white;
+    text-align: center;
+    margin-top: 3%;
+}
+
+.login-logo{
+    font-size: 36pt;
+    text-align: center;
+}
+
+.reg-text {
+    margin-top: 1%;
+}
+
+/* button */
+.btn-custom {
+    color: white;
+    padding: 15px 15px;
+    width: 100%;
+    font-size: 14pt;
+}
+
+.btn-custom, .btn-custom:hover, .btn-custom:active, .btn-custom:visited {
+    background-color: #9CC5A1 !important;
+}
+
+/* inputs  */
+.input-container{
+	position:relative;
+	margin-bottom:25px;
+}
+.input-container label{
+	position:absolute;
+	top:0px;
+	left:0px;
+	font-size:16px;
+	color:black;
+	transition: all 0.3s ease-in-out;
+}
+.input-container input{ 
+  border:0;
+  border-bottom:1px solid #555;  
+  background:transparent;
+  width:100%;
+  padding:8px 0 5px 0;
+  font-size:16px;
+  color:black;
+}
+.input-container input:focus{ 
+ border:none;	
+ outline:none;
+ border-bottom:1px solid #9CC5A1;	
+}
+.input-container input:focus ~ label,
+.input-container input:valid ~ label{
+	top:-12px;
+	font-size:12px;
+	
+}
+
+/* link */
+a:hover{
+    color:black;
+}
+a.after:after{
+  content: "";
+  transition:0.5s all ease;
+  -webkit-backface-visibility:hidden;
+          backface-visibility:hidden;
+  position:absolute;
+}
+a.after:after{
+  bottom:-4px;
+}
+a.after:after{
+  height: 4px;
+  width:0;
+  background:black;
+}
+a.link:after{
+  left:50%;
+  -webkit-transform:translateX(-50%);
+          transform:translateX(-50%);
+}
+a.after:hover:after{
+  width:100%;
+}
+
+a.active {
+    color: black;
+    border-bottom: 4px solid black;
+}
+
+
+/* registration */
+.login-form.reg {
+    margin-top: 3%;
+}
+
+/* back btn */
+.back {
+    position: absolute;
+    margin-top: 2%;
+    margin-left: 2%;
+    font-size: 16pt;
+}
+
+.alert-danger, .alert-success {
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.alert-danger {
+    background-color: #C49487;
+    border-color: rgb(192, 134, 117);
+    color: rgb(97, 23, 0);
+}
+
+.alert-success {
+    background-color: #AEDBA2;
+    border-color: rgb(121, 206, 97);
+    color: rgb(28, 128, 0);
+}
+
+.forgot-pass {
+    position: absolute;
+    bottom: 10px;
+    right: 60px;
+}
+
+@media only screen and (max-width: 991px) {
+    .logo-text {
+        margin-top: 10%;
+    }
+    .logo-text-p {
+        display: none;
+    }
+    .login-title {
+        font-size: 26pt;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .logo-text {
+        margin-top: 20%;
+    }
+    .on-main {
+        display: none;
+    }
+    .back {
+        top: 2%;
+        left: 10px;
+    }
+    .on-main-i {
+        position: absolute;
+        font-size: 20pt;
+        z-index: 100;
+    }
+}
